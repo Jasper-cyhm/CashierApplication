@@ -36,5 +36,17 @@ namespace CashierApplication
             double change = payment - total;
             textBox7.Text = change.ToString("0.00");
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLoginAccount frm = new frmLoginAccount();
+            frm.Show();
+            frm.Hide();
+        }
+
+        private void exitApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
